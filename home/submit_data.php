@@ -70,7 +70,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="petugasbon" placeholder="No Pegawai">
+                    <input type="text" class="form-control" name="petugasbon" value="<?php echo $nama; ?>">
                   </div>
                 </div>
                 <!-- /.form-group -->
