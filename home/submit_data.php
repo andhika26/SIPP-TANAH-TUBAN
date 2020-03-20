@@ -144,7 +144,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="kepetugasgambar" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="daripetugasgambar" placeholder="No Pegawai">
                   </div>
                 </div>
 				
@@ -154,7 +154,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="daripetugasgambar" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="daripetugasukur" placeholder="No Pegawai">
                   </div>
                 </div>
 				
