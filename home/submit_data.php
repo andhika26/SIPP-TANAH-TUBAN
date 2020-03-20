@@ -39,7 +39,7 @@
 		  
           <!-- /.card-header -->
           <div class="card-body">
-		  <form method="post" action="registeruser_aksi.php" enctype="multipart/form-data">
+		  <form method="post" action="pengolahandata_aksi.php" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-6">
 			
@@ -59,7 +59,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="nav-icon far fa-file"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="nama" value="<?php echo $no302; ?>" readonly="on">
+                    <input type="text" class="form-control" name="DI302" value="<?php echo $no302; ?>" readonly="on">
                   </div>
                 </div>
                 <!-- /.form-group -->
@@ -70,7 +70,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="text" class="form-control" name="petugasbon" placeholder="No Pegawai">
                   </div>
                 </div>
                 <!-- /.form-group -->
@@ -81,7 +81,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="kebon" placeholder="No Pegawai">
                   </div>
                 </div>
 				
@@ -91,7 +91,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="daribon" placeholder="No Pegawai">
                   </div>
                 </div>
                 <!-- /.form-group -->
@@ -102,7 +102,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="text" class="form-control" name="seribon" placeholder="No Pegawai">
                   </div>
                 </div>
 				
@@ -117,7 +117,7 @@
 				<div class="form-group">
                   <label>Petugas Gambar</label>
 				  
-                  <select class="form-control select2" style="width: 100%;" name="permohonan">
+                  <select class="form-control select2" style="width: 100%;" name="petugasgambar">
                     <option value="petugas">1.PETUGAS</option>
                     <option value="petugas">1.PETUGAS</option>
                     <option value="petugas">1.PETUGAS</option>
@@ -133,7 +133,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="kepetugasgambar" placeholder="No Pegawai">
                   </div>
                 </div>
 				
@@ -144,7 +144,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="kepetugasgambar" placeholder="No Pegawai">
                   </div>
                 </div>
 				
@@ -154,7 +154,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="daripetugasgambar" placeholder="No Pegawai">
                   </div>
                 </div>
 				
@@ -164,7 +164,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="kepemetaan" placeholder="No Pegawai">
                   </div>
                 </div>
 				
@@ -174,14 +174,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="daripemetaan" placeholder="No Pegawai">
                   </div>
                 </div>
 				
 				<div class="form-group">
                   
                   <div class="input-group">
-                    <input type="submit" class="btn btn-block btn-primary btn-lg" name="simpan" value="Tambahkan Pengguna">
+                    <input type="submit" class="btn btn-block btn-primary btn-lg" name="simpan" value="SIMPAN BERKAS PENGOLAHAN DATA">
                   </div>
                 </div>
 				
