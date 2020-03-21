@@ -60,7 +60,7 @@
                 <!-- /.form-group -->
 				
                 <div class="form-group">
-				<label>Petugas BON Blangko</label>
+				<label>Tanggal Terima Berkas Dari Pengolahan Data :</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
@@ -70,40 +70,10 @@
                 </div>
                 <!-- /.form-group -->
 				
-				<div class="form-group">
-				<label>Ke BON Blangko</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
 				
-				<div class="form-group">
-				<label>dari BON Blangko</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
                 <!-- /.form-group -->
 				
-				<div class="form-group">
-				<label>No.Seri Blangko</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="text" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
 				
-				
-				
-              </div>
 			  
 			  
               <!-- /.col -->
