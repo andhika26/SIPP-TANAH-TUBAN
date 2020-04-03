@@ -78,7 +78,20 @@
 				}
 				?>
 				</th>
-                <th><center><i class='fas fa-circle'></i></center></th>
+        <?php
+				include ("../config/database.php");
+				$id1 = $_GET['id'];
+				$t3 = mysqli_query($koneksi, "SELECT * FROM tbl_olahdata WHERE status='1' AND DI302='$id1'") or die (mysqli_error());
+				$r3 = mysqli_fetch_array($t2);
+				?>
+                <th>
+				<?php if($r3['status']=='1'){
+				echo "<center><i class='fas fa-check-circle'></i></center>";
+				} else {
+				echo "<center><i class='fas fa-circle'></i></center>";
+				}
+				?>
+				</th>
                 <th><center><i class='fas fa-circle'></i></center></th>
                 <th><center><i class='fas fa-circle'></i></center></th>
 				<th><center><i class='fas fa-circle'></i></center></th>

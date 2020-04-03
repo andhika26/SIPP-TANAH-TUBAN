@@ -109,7 +109,7 @@
 	$now = date("d-m-Y");
 	  // menghubungkan dengan koneksi
 		include ("../config/database.php");
-	  $query = mysqli_query($koneksi, "SELECT tbl_pemohon.pemohon, tbl_pemohon.DI302,tbl_pemohon.no_berkas, tbl_ukur.tjk_ukur, tbl_ukur.kektk_ukur, tbl_ukur.drktk_ukur, tbl_ukur.kettd_ukur, tbl_ukur.drttd_ukur, tbl_ukur.petugas, tbl_ukur.ke_ukur, tbl_ukur.dari_ukur, tbl_ukur.status FROM tbl_pemohon JOIN tbl_ukur ON tbl_pemohon.no_berkas = tbl_ukur.no_berkas WHERE tbl_ukur.status='0'") or die (mysqli_error());
+	  $query = mysqli_query($koneksi, "SELECT tbl_pemohon.pemohon, tbl_pemohon.DI302,tbl_pemohon.no_berkas FROM tbl_pemohon JOIN tbl_gambar ON tbl_pemohon.no_berkas = tbl_gambar.no_berkas WHERE tbl_gambar.status='0'") or die (mysqli_error());
 	  if(mysqli_num_rows($query) == 0){
 	  echo "<button class='btn btn-danger'><b>Belum Ada Data Yang Masuk</b></button>";
 	  }else{

@@ -36,7 +36,7 @@
 				break;
 				
 			case 'submitgambar':
-				include "submit_data.php";
+				include "submit_gambar.php";
 				break;
 				
 			case 'validasi':
