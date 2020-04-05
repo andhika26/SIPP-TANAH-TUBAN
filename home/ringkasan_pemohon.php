@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>404 Error Page</h1>
+            <h1>Ringkasan Pemohon</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -24,45 +24,95 @@
             <table id="example2" class="table table-bordered table-hover">
               <thead>
               <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
+                <th>No</th>
+                <th>Permohonan</th>
+                <th>Berkas Masuk</th>
+                <th>Selesai</th>
+                <th>Proses</th>
               </tr>
               </thead>
               <tbody>
               <tr>
-                <td>Trident</td>
-                <td>Internet
-                  Explorer 4.0
-                </td>
+                <td>1</td>
+                <td>KONVERSI</td>
                 <td>Win 95+</td>
                 <td> 4</td>
                 <td>X</td>
               </tr>
               <tr>
-                <td>Trident</td>
-                <td>Internet
-                  Explorer 5.0
-                </td>
+                <td>2</td>
+                <td>PETA BIDANG</td>
                 <td>Win 95+</td>
-                <td>5</td>
-                <td>C</td>
+                <td> 4</td>
+                <td>X</td>
               </tr>
               <tr>
-                <td>Trident</td>
-                <td>Internet
-                  Explorer 5.5
-                </td>
+                <td>3</td>
+                <td>PEMECAHAN</td>
                 <td>Win 95+</td>
-                <td>5.5</td>
-                <td>A</td>
+                <td> 4</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>PENGGABUNGAN</td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>PEMISAHAN</td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>PENGEMBALIAN BATAS</td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>WAKAF</td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>SK</td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>PENDAFTARAN KEDUA</td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>PENGGANTIAN SERTIPIKAT</td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>SK</td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
               </tr>
               </tbody>
               <tfoot>
               <tr>
-                <th>Rendering engine</th>
+                <th>Total</th>
                 <th>Browser</th>
                 <th>Platform(s)</th>
                 <th>Engine version</th>

@@ -84,7 +84,18 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-map"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="kecamatan">
+                    <select id="kecamatan" class="form-control select2" name="kecamatan">
+                    <option value="">Please Select</option>
+                                                <?php
+                                                    $query = mysqli_query($koneksi, "SELECT * FROM kecamatan ORDER BY namakec");
+                                                    while ($row = mysqli_fetch_array($query)) { ?>
+
+                                                    <option value="<?php echo $row['namakec']; ?>">
+                                                        <?php echo $row['namakec']; ?>
+                                                    </option>
+
+                                                <?php } ?>
+                                                </select>
                   </div>
                 </div>
                 <!-- /.form-group -->
@@ -95,7 +106,18 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-map"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="desa">
+                    <select id="desa" class="form-control" name="desa">
+                                                <option value="">Please Select</option>
+                                                <?php
+                                                    $query = mysqli_query($koneksi, "SELECT * FROM desa INNER JOIN kecamatan ON desa.idkec = kecamatan.idkec ORDER BY namadesa");
+                                                    while ($row1 = mysqli_fetch_array($query1)) { ?>
+
+                                                    <option id="desa" class="<?php echo $row['idkec']; ?>" value="<?php echo $row['namadesa']; ?>">
+                                                        <?php echo $row['namadesa']; ?>
+                                                    </option>
+
+                                                <?php } ?>
+                                            </select>
                   </div>
                 </div>
 				
