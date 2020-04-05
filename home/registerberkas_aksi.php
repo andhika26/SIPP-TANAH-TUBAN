@@ -33,12 +33,11 @@ if (isset($_POST['simpan'])) {
         // SQL query untuk memeriksa apakah users terdapat di database?
         $query = mysqli_query($koneksi,"INSERT INTO tbl_pemohon VALUES ('', '$id2', '$pemohon', '$terima', '$permohonan', '$kecamatan', '$desa', '$lausan', '$tahun', '$noberkas', '$di301', '$di302', '$tgldi302', '$di305', '$biaya', '$petugas', '$kuasa', '$status')");  
 
-		$query = mysqli_query($koneksi,"INSERT INTO tbl_ukur VALUES ('', '$noberkas','$di302', '', '', '', '', '', '$petugas', '', '', '0','$created')");  
+		$query1 = mysqli_query($koneksi,"INSERT INTO tbl_ukur VALUES ('', '$noberkas','$di302', '-', '-', '-', '-', '-', '$petugas', '-', '-', '0','$created')");  
+		$query2 = mysqli_query($koneksi,"INSERT INTO tbl_olahdata VALUES ('', '$di302','$noberkas', '$petugas', '-', '-', '-', '-', '-', '-', '-', '-', '-', '0', '$created')");  
 		
-		$query = mysqli_query($koneksi,"INSERT INTO tbl_olahdata VALUES ('', '$di302','$noberkas', '$petugas', '', '', '', '', '', '', '','', '0', '$created')");  
 		
-		
-		if ($query > 0 ) {
+		if ($query) {
 				
 		echo "<script type='text/javascript'>alert('Permohonan $pemohon Telah Teregister!');document.location='./?page=register'</script>";
 			} else {
