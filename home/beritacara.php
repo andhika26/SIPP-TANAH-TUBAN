@@ -5,12 +5,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambahan Biaya</h1>
+            <h1>Berita Acara</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Tambahan Biaya</li>
+              <li class="breadcrumb-item active">Berita Acara</li>
             </ol>
           </div>
         </div>
@@ -24,7 +24,7 @@
 <!---- data permohonan ----------->
 <div class="card card-default">
           <div class="card-header">
-            <h3 class="card-title"><b>Tambahan Biaya</b></h3>
+            <h3 class="card-title"><b>Berita Acara</b></h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
@@ -112,11 +112,11 @@
     tbl_pemohon.pemohon AS 'Pemohon',
     tbl_pemohon.DI302,
     tbl_pemohon.no_berkas AS 'No Berkas',
-    tbl_biaya.tglterima,
-    tbl_biaya.tglselesai 
+    tbl_beritaacara.tglterima,
+    tbl_beritaacara.tglselesai 
   FROM
     tbl_pemohon
-    JOIN tbl_biaya ON tbl_pemohon.no_berkas = tbl_biaya.noberkas WHERE tbl_biaya.status='0'") or die (mysqli_error());
+    JOIN tbl_beritaacara ON tbl_pemohon.no_berkas = tbl_beritaacara.noberkas WHERE tbl_beritaacara.status='0'") or die (mysqli_error());
 	  if(mysqli_num_rows($query) == 0){
 	  echo "<button class='btn btn-danger'><b>Belum Ada Data Yang Masuk</b></button>";
 	  }else{
@@ -125,10 +125,10 @@
 	  ?>
               <tr>
                 <td><?php echo $r[1]; ?></td>
-                <td><a href="?page=submitbiaya&&id=<?php echo $r[2]; ?>"><b><?php echo $r[0]; ?></b></a></td>
+                <td><a href="?page=submitba&&id=<?php echo $r[2]; ?>"><b><?php echo $r[0]; ?></b></a></td>
                 <td><?php echo $r[3]; ?></td>
 				<td><?php echo $r[4]; ?></td>
-                <td><a href="?page=submitbiaya&&id=<?php echo $r[2]; ?>"><button class="btn btn-block btn-success btn-sm">Edit</button></a></td>
+                <td><a href="?page=submitba&&id=<?php echo $r[2]; ?>"><button class="btn btn-block btn-success btn-sm">Edit</button></a></td>
               </tr>
               <?php
   endwhile;

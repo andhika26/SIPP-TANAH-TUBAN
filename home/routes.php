@@ -74,6 +74,14 @@
 			case 'tambahbiaya':
 				include "biayatambahan.php";
 				break;
+
+			case 'ba':
+				include "beritacara.php";
+				break;
+
+			case 'bonminut':
+				include "halamanbonminut.php";
+				break;
 					
 			default:
 				include "err404.php";
