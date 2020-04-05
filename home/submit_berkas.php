@@ -105,11 +105,11 @@
                   <label>Petugas Gambar</label>
 				  
                   <select class="form-control select2" style="width: 100%;" name="permohonan">
-                    <option value="petugas">1.PETUGAS</option>
-                    <option value="petugas">1.PETUGAS</option>
-                    <option value="petugas">1.PETUGAS</option>
-                    <option value="petugas">1.PETUGAS</option>
-                    <option value="petugas">1.PETUGAS</option>
+                    <option value="petugas">1.KASI IP</option>
+                    <option value="petugas">2.PETUGAS GAMBAR</option>
+                    <option value="petugas">3.PETUGAS UKUR</option>
+                    <option value="petugas">4.WARKAH</option>
+                    <option value="petugas">5.SEKSI H2P</option>
                   </select>
                 </div>
 				
