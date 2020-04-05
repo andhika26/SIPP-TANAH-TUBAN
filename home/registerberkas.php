@@ -85,12 +85,11 @@
                       <span class="input-group-text"><i class="far fa-map"></i></span>
                     </div>
                     <select id="kecamatan" class="form-control select2" name="kecamatan">
-                    <option value="">Please Select</option>
                                                 <?php
                                                     $query = mysqli_query($koneksi, "SELECT * FROM kecamatan ORDER BY namakec");
                                                     while ($row = mysqli_fetch_array($query)) { ?>
 
-                                                    <option value="<?php echo $row['namakec']; ?>">
+                                                    <option value="<?php echo $row['idkec']; ?>">
                                                         <?php echo $row['namakec']; ?>
                                                     </option>
 
@@ -107,7 +106,6 @@
                       <span class="input-group-text"><i class="far fa-map"></i></span>
                     </div>
                     <select id="desa" class="form-control" name="desa">
-                                                <option value="">Please Select</option>
                                                 <?php
                                                     $query = mysqli_query($koneksi, "SELECT * FROM desa INNER JOIN kecamatan ON desa.idkec = kecamatan.idkec ORDER BY namadesa");
                                                     while ($row1 = mysqli_fetch_array($query1)) { ?>
