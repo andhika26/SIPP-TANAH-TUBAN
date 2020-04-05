@@ -70,6 +70,10 @@
 			case 'user':
 				include "registeruser.php";
 				break;
+
+			case 'tambahbiaya':
+				include "biayatambahan.php";
+				break;
 					
 			default:
 				include "err404.php";
