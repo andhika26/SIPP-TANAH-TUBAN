@@ -35,8 +35,10 @@ if (isset($_POST['simpan'])) {
 
 		$query1 = mysqli_query($koneksi,"INSERT INTO tbl_ukur VALUES ('', '$noberkas','$di302', '-', '-', '-', '-', '-', '$petugas', '-', '-', '0','$created')");  
 		$query2 = mysqli_query($koneksi,"INSERT INTO tbl_olahdata VALUES ('', '$di302','$noberkas', '$petugas', '-', '-', '-', '-', '-', '-', '-', '-', '-', '0', '$created')");  
-		
-		
+		$query3 = mysqli_query($koneksi,"INSERT INTO tbl_gambar VALUES ('','$noberkas','$di302', '$petugas', '-', '-', '0', '$created')");
+		$query4 = mysqli_query($koneksi,"INSERT INTO tbl_validasi VALUES ('','$noberkas','$di302')");
+		$query5 = mysqli_query($koneksi,"INSERT INTO tbl_pemetaan VALUES ('','$noberkas','$di302', '-', '-', '0', '$created')");
+
 		if ($query) {
 				
 		echo "<script type='text/javascript'>alert('Permohonan $pemohon Telah Teregister!');document.location='./?page=register'</script>";

@@ -55,7 +55,7 @@
                 </div>
 				
                 <div class="form-group">
-				<label>No.302</label>
+				<label>No.302 <i>Terisi Otomatis</i></label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="nav-icon far fa-file"></i></span>
@@ -66,7 +66,7 @@
                 <!-- /.form-group -->
 				
                 <div class="form-group">
-				<label>Tanggal Terima Berkas :</label>
+				<label>Tanggal Terima Berkas <i>Terisi Otomatis</i> :</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>

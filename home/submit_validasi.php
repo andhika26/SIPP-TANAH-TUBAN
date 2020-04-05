@@ -55,7 +55,7 @@
                 </div>
 				
                 <div class="form-group">
-				<label>No.302</label>
+				<label>No.302 <i>Terisi Otomatis</i></label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="nav-icon far fa-file"></i></span>
@@ -89,12 +89,11 @@
                   <label>Setor Ke :</label>
 				  
                   <select class="form-control select2" style="width: 100%;" name="permohonan">
-                    <option value="petugas">KASUBSI UKUR</option>
-                    <option value="petugas">PEMETAAN</option>
-                    <option value="petugas">PETUGAS UKUR</option>
+                    <option value="petugas">KASI IP</option>
                     <option value="petugas">PETUGAS GAMBAR</option>
-                    <option value="petugas">KONFIRMASI PEMOHON</option>
-                    <option value="petugas">PEMBATALAN BERKAS</option>
+                    <option value="petugas">PETUGAS UKUR</option>
+                    <option value="petugas">WARKAH</option>
+                    <option value="petugas">SEKSI H2P</option>
                   </select>
                 </div>
 				

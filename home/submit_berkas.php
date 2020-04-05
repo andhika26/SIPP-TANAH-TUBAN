@@ -5,12 +5,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Berkas Ukur Pemohon</h1>
+            <h1>Penyelesaian Berkas Pemohon</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Berkas Ukur Pemohon</li>
+              <li class="breadcrumb-item active">Penyelesaian Berkas Pemohon</li>
             </ol>
           </div>
         </div>
@@ -24,7 +24,7 @@
 <!---- data permohonan ----------->
 <div class="card card-default">
           <div class="card-header">
-            <h3 class="card-title"><b>Berkas Ukur Pemohon</b></h3>
+            <h3 class="card-title"><b>Penyelesaian Berkas Pemohon</b></h3>
 
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
@@ -34,7 +34,7 @@
 		  
           <!-- /.card-header -->
           <div class="card-body">
-		  <form method="post" action="registeruser_aksi.php" enctype="multipart/form-data">
+		  <form method="post" action="penyelesaianberkas_aksi.php" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-6">
 			
@@ -49,7 +49,7 @@
                 </div>
 				
                 <div class="form-group">
-				<label>No.302</label>
+				<label>No.302 <i>Terisi Otomatis</i></label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="nav-icon far fa-file"></i></span>
@@ -59,19 +59,9 @@
                 </div>
                 <!-- /.form-group -->
 				
-                <div class="form-group">
-				<label>Petugas BON Blangko</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="text" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
-                <!-- /.form-group -->
 				
 				<div class="form-group">
-				<label>Ke BON Blangko</label>
+				<label>Tgl.Terima Berkas <i>Terisi Otomatis</i></label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
@@ -80,13 +70,23 @@
                   </div>
                 </div>
 				
-				<div class="form-group">
-				<label>dari BON Blangko</label>
+				
+				
+				
+				
+              </div>
+			  
+			  
+              <!-- /.col -->
+              <div class="col-md-6">
+
+              <div class="form-group">
+				<label>DI 307</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="text" class="form-control" name="nip" placeholder="No DI307">
                   </div>
                 </div>
                 <!-- /.form-group -->
@@ -100,14 +100,6 @@
                     <input type="text" class="form-control" name="nip" placeholder="No Pegawai">
                   </div>
                 </div>
-				
-				
-				
-              </div>
-			  
-			  
-              <!-- /.col -->
-              <div class="col-md-6">
 			  
 				<div class="form-group">
                   <label>Petugas Gambar</label>
@@ -122,61 +114,14 @@
                 </div>
 				
 			  
-				<div class="form-group">
-				<label>Tgl.ke Petugas Gambar</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
 				
 				
-				<div class="form-group">
-				<label>Tgl.dr Petugas Gambar</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
-				
-				<div class="form-group">
-				<label>Tgl.dr Petugas Ukur</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
-				
-				<div class="form-group">
-				<label>Ke Pemetaan</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
-				
-				<div class="form-group">
-				<label>Dari Pemetaan</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar"></i></span>
-                    </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
-                  </div>
-                </div>
+			
 				
 				<div class="form-group">
                   
                   <div class="input-group">
-                    <input type="submit" class="btn btn-block btn-primary btn-lg" name="simpan" value="Tambahkan Pengguna">
+                    <input type="submit" class="btn btn-block btn-primary btn-lg" name="simpan" value="Update Data">
                   </div>
                 </div>
 				
