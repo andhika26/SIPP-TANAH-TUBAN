@@ -34,7 +34,7 @@
 		  
           <!-- /.card-header -->
           <div class="card-body">
-		  <form method="post" action="registerberkas_aksi.php" enctype="multipart/form-data">
+		  <form method="post" class="form-horizontal" action="registerberkas_aksi.php" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-6">
 			
@@ -78,46 +78,58 @@
                   </select>
                 </div>
 				
-				<div class="form-group">
-                  <label>Kecamatan</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-map"></i></span>
-                    </div>
-                    <select id="kecamatan" class="form-control select2" name="kecamatan">
+               
+                <div class="form-group">
+                <label>Alamat Pemohon</label>       
+                <div class="col-sm-3">
+                                            <!--provinsi-->
+                                            <select id="provinsi" class="form-control" name="provinsi">
+                                                <option value="">Please Select</option>
                                                 <?php
-                                                    $query = mysqli_query($koneksi, "SELECT * FROM kecamatan ORDER BY namakec");
+                                                    $query = mysqli_query($koneksi, "SELECT * FROM provinsi ORDER BY provinsi");
                                                     while ($row = mysqli_fetch_array($query)) { ?>
 
-                                                    <option value="<?php echo $row['idkec']; ?>">
-                                                        <?php echo $row['namakec']; ?>
-                                                    </option>
-
-                                                <?php } ?>
-                                                </select>
-                  </div>
-                </div>
-                <!-- /.form-group -->
-				
-				<div class="form-group">
-                  <label>Desa/Kelurahan</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-map"></i></span>
-                    </div>
-                    <select id="desa" class="form-control" name="desa">
-                                                <?php
-                                                    $query = mysqli_query($koneksi, "SELECT * FROM desa INNER JOIN kecamatan ON desa.idkec = kecamatan.idkec ORDER BY namadesa");
-                                                    while ($row1 = mysqli_fetch_array($query1)) { ?>
-
-                                                    <option id="desa" class="<?php echo $row['idkec']; ?>" value="<?php echo $row['namadesa']; ?>">
-                                                        <?php echo $row['namadesa']; ?>
+                                                    <option value="<?php echo $row['id_provinsi']; ?>">
+                                                        <?php echo $row['provinsi']; ?>
                                                     </option>
 
                                                 <?php } ?>
                                             </select>
-                  </div>
-                </div>
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <!--kota-->
+                                            <select id="kota" class="form-control" name="kota">
+                                                <option value="">Please Select</option>
+                                                <?php
+                                                    $query = mysqli_query($koneksi, "SELECT * FROM kota INNER JOIN provinsi ON kota.id_provinsi_fk = provinsi.id_provinsi ORDER BY nama_kota");
+                                                    while ($row = mysqli_fetch_array($query)) { ?>
+
+                                                    <option id="kota" class="<?php echo $row['id_provinsi']; ?>" value="<?php echo $row['id_kota']; ?>">
+                                                        <?php echo $row['nama_kota']; ?>
+                                                    </option>
+
+                                                <?php } ?>
+                                            </select>
+                                       </div>
+                                      
+                                            <!--kecamatan-->
+                                            <select id="kecamatan" class="form-control" name="kecamatan">
+                                                <option value="">Please Select</option>
+                                                <?php
+                                                    $query = mysqli_query($koneksi, "SELECT * FROM kecamatan INNER JOIN kota ON kecamatan.id_kota_fk = kota.id_kota ORDER BY nama_kecamatan");
+                                                    while ($row = mysqli_fetch_array($query)) { ?>
+
+                                                    <option id="kecamatan" class="<?php echo $row['id_kota']; ?>" value="<?php echo $row['id_kecamatan']; ?>">
+                                                        <?php echo $row['nama_kecamatan']; ?>
+                                                    </option>
+
+                                                <?php } ?>
+                                            </select>
+                                       
+                                    </div>                         <!--provinsi-->
+                               
+                
 				
 				<div class="form-group">
                   <label>Luas Permohonan M2</label>
@@ -335,5 +347,4 @@
 		</section>
     <!-- /.content -->
   </div>
-  
   

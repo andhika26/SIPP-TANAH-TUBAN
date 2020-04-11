@@ -45,6 +45,16 @@
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+ 
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="aset/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+
+  <script src="aset/js/jquery.min.js"></script>
+  <script src="aset/js/ie-emulation-modes-warning.js"></script>
+
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -263,7 +273,18 @@ to get the desired effect
 <script src="../timeline/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
   <script src="../timeline/js/swipe-content.js"></script> <!-- A Vanilla JavaScript plugin to detect touch interactions -->
   <script src="../timeline/js/main.js"></script>
-  
+   <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <script src="aset/js/bootstrap.min.js"></script>
+        <script src="aset/js/jquery-chained.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="aset/js/ie10-viewport-bug-workaround.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#kota").chained("#provinsi");
+                $("#kecamatan").chained("#kota");
+            });
+        </script>
   
 </body>
 
