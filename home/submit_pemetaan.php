@@ -40,7 +40,7 @@
 		  
           <!-- /.card-header -->
           <div class="card-body">
-		  <form method="post" action="prosesvalidasi_aksi.php" enctype="multipart/form-data">
+		  <form method="post" action="prosespemetaan_aksi.php" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-6">
 			
@@ -88,13 +88,13 @@
 				<div class="form-group">
                   <label>Setor Ke :</label>
 				  
-                  <select class="form-control select2" style="width: 100%;" name="permohonan">
-                    <option value="petugas">KASUBSI UKUR</option>
-                    <option value="petugas">PEMETAAN</option>
-                    <option value="petugas">PETUGAS UKUR</option>
-                    <option value="petugas">PETUGAS GAMBAR</option>
-                    <option value="petugas">KONFIRMASI PEMOHON</option>
-                    <option value="petugas">PEMBATALAN BERKAS</option>
+                  <select class="form-control select2" style="width: 100%;" name="setor_ke">
+                    <option value="KASUBSI UKUR">KASUBSI UKUR</option>
+                    <option value="PEMETAAN">PEMETAAN</option>
+                    <option value="PETUGAS UKUR">PETUGAS UKUR</option>
+                    <option value="PETUGAS GAMBAR">PETUGAS GAMBAR</option>
+                    <option value="KONFIRMASI">KONFIRMASI PEMOHON</option>
+                    <option value="PEMBATALAN BERKAS">PEMBATALAN BERKAS</option>
                   </select>
                 </div>
 				
@@ -105,7 +105,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="tgl_setor" placeholder="No Pegawai">
                   </div>
                 </div>
 				

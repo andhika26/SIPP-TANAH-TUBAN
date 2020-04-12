@@ -34,7 +34,7 @@
 		  
           <!-- /.card-header -->
           <div class="card-body">
-		  <form>
+		  <form >
 				<div class="row">
 				<div class="col-md-6">
 			  <div class="form-group">
@@ -44,6 +44,13 @@
                       <span class="input-group-text"><i class="nav-icon fas fa-file"></i></span>
                     </div>
                     <input type="text" class="form-control" name="pemohon" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  
+                  <div class="input-group">
+                    <input type="submit" class="btn btn-block btn-success btn-lg" name="semua_data_olahgambar" required value="Lihat Data Olah Gambar Semua">
                   </div>
                 </div>
 

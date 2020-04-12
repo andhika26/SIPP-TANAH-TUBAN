@@ -46,7 +46,12 @@
                     <input type="text" class="form-control" name="nomor" required>
                   </div>
                 </div>
-
+                <div class="form-group">
+                  
+                  <div class="input-group">
+                    <input type="submit" class="btn btn-block btn-success btn-lg" name="semua_data_ukur" required value="Lihat Data Semua Petugas Ukur">
+                  </div>
+                </div>
                 <!-- /.form-group -->
               </div>
 			  

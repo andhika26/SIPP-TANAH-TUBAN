@@ -47,6 +47,14 @@
                     <input type="text" class="form-control" name="nama_pegawai" value="<?php echo $nama; ?>" readonly="on">
                   </div>
                 </div>
+
+
+                <?php
+	$no302 = $_GET['id'];
+  $hariini = date('m/d/Y');
+  $q = mysqli_query($koneksi, "SELECT DI302, tgl_DI302 FROM tbl_pemohon WHERE DI302='$no302'") or die (mysqli_error());
+	$tgldata = mysqli_fetch_array($q);
+	?>
 				
                 <div class="form-group">
 				<label>No.302 <i>Terisi Otomatis</i></label>
@@ -54,7 +62,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="nav-icon far fa-file"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="nama">
+                    <input type="text" class="form-control" name="DI302" value="<?php echo $tgldata[0] ?>" readonly="on">
                   </div>
                 </div>
                 <!-- /.form-group -->
@@ -66,7 +74,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="tgl_DI302" value="<?php echo $tgldata[1] ?>" readonly="on">
                   </div>
                 </div>
 				
@@ -86,7 +94,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="nip" placeholder="No DI307">
+                    <input type="text" class="form-control" name="DI307" placeholder="No DI307">
                   </div>
                 </div>
                 <!-- /.form-group -->
@@ -97,14 +105,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="text" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="text" class="form-control" name="seriblangko" placeholder="No.Seri Blangko">
                   </div>
                 </div>
 			  
 				<div class="form-group">
                   <label>Petugas Gambar</label>
 				  
-                  <select class="form-control select2" style="width: 100%;" name="permohonan">
+                  <select class="form-control select2" style="width: 100%;" name="petugas_gambar">
                     <option value="petugas">1.KASI IP</option>
                     <option value="petugas">2.PETUGAS GAMBAR</option>
                     <option value="petugas">3.PETUGAS UKUR</option>

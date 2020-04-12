@@ -47,6 +47,13 @@
                   </div>
                 </div>
 
+                <div class="form-group">
+                  
+                  <div class="input-group">
+                    <input type="submit" class="btn btn-block btn-success btn-lg" name="semua_data_olahdata" required value="Lihat Semua Data Pengolahan Data">
+                  </div>
+                </div>
+
                 <!-- /.form-group -->
               </div>
 			  

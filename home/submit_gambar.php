@@ -88,15 +88,15 @@
 				<div class="form-group">
                   <label>Setor Ke :</label>
 				  
-                  <select class="form-control select2" style="width: 100%;" name="permohonan">
-                    <option value="petugas">BON MINUT</option>
-                    <option value="petugas">KASUBSI UKUR</option>
-                    <option value="petugas">PEMETAAN</option>
-                    <option value="petugas">BERITA ACARA</option>
-                    <option value="petugas">TAMBAH BIAYA</option>
-                    <option value="petugas">PETUGAS UKUR</option>
-                    <option value="petugas">KONFIRMASI PEMOHON</option>
-                    <option value="petugas">BON BLANGKO BARU</option>
+                  <select class="form-control select2" style="width: 100%;" name="setor_ke">
+                    <option value="BON MINUT">BON MINUT</option>
+                    <option value="KASUBSI UKUR">KASUBSI UKUR</option>
+                    <option value="PEMETAAN">PEMETAAN</option>
+                    <option value="BERITA ACARA">BERITA ACARA</option>
+                    <option value="TAMBAH BIAYA">TAMBAH BIAYA</option>
+                    <option value="PETUGAS UKUR">PETUGAS UKUR</option>
+                    <option value="KONFIRMASI">KONFIRMASI PEMOHON</option>
+                    <option value="BON BARU">BON BLANGKO BARU</option>
                   </select>
                 </div>
 				
@@ -107,7 +107,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="far fa-calendar"></i></span>
                     </div>
-                    <input type="date" class="form-control" name="nip" placeholder="No Pegawai">
+                    <input type="date" class="form-control" name="tgl_setor" placeholder="No Pegawai">
                   </div>
                 </div>
 				
