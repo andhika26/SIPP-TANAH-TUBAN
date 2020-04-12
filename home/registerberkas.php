@@ -11,7 +11,7 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">Register Berkas </li>
-              <a href=""> <li class="breadcrumb-item active"> / Laporan Excel</li></a>
+              <a href="exp_pemohon_excel.php"><li class="breadcrumb-item active"> / Laporan Excel</li></a>
             </ol>
           </div>
         </div>
@@ -82,53 +82,33 @@
                
                 <div class="form-group">
                 <label>Alamat Pemohon</label>       
-                <div class="col-sm-3">
                                             <!--provinsi-->
-                                            <select id="provinsi" class="form-control" name="provinsi">
-                                                <option value="">Please Select</option>
-                                                <?php
-                                                    $query = mysqli_query($koneksi, "SELECT * FROM provinsi ORDER BY provinsi");
-                                                    while ($row = mysqli_fetch_array($query)) { ?>
-
-                                                    <option value="<?php echo $row['id_provinsi']; ?>">
-                                                        <?php echo $row['provinsi']; ?>
-                                                    </option>
-
-                                                <?php } ?>
-                                            </select>
-                                        </div>
-
-                                        <div class="col-sm-3">
-                                            <!--kota-->
-                                            <select id="kota" class="form-control" name="kota">
-                                                <option value="">Please Select</option>
-                                                <?php
-                                                    $query = mysqli_query($koneksi, "SELECT * FROM kota INNER JOIN provinsi ON kota.id_provinsi_fk = provinsi.id_provinsi ORDER BY nama_kota");
-                                                    while ($row = mysqli_fetch_array($query)) { ?>
-
-                                                    <option id="kota" class="<?php echo $row['id_provinsi']; ?>" value="<?php echo $row['id_kota']; ?>">
-                                                        <?php echo $row['nama_kota']; ?>
-                                                    </option>
-
-                                                <?php } ?>
-                                            </select>
-                                       </div>
-                                      
-                                            <!--kecamatan-->
-                                            <select id="kecamatan" class="form-control" name="kecamatan">
-                                                <option value="">Please Select</option>
-                                                <?php
-                                                    $query = mysqli_query($koneksi, "SELECT * FROM kecamatan INNER JOIN kota ON kecamatan.id_kota_fk = kota.id_kota ORDER BY nama_kecamatan");
-                                                    while ($row = mysqli_fetch_array($query)) { ?>
-
-                                                    <option id="kecamatan" class="<?php echo $row['id_kota']; ?>" value="<?php echo $row['id_kecamatan']; ?>">
-                                                        <?php echo $row['nama_kecamatan']; ?>
-                                                    </option>
-
-                                                <?php } ?>
-                                            </select>
+                                            <select class="form-control select2" style="width: 100%;" name="permohonan">
+                    <option value="Bancar">Bancar</option>
+                    <option value="Tambakboyo">Tambakboyo</option>
+                    <option value="Jenu">Jenu</option>
+                  </select>
                                        
-                                    </div>                         <!--provinsi-->
+
+                                  
+                                            <!--kota-->
+                                            <select class="form-control select2" style="width: 100%;" name="permohonan">
+                    <option value="Konversi">1.KONVERSI</option>
+                    <option value="Peta Bidang">2.PETA BIDANG</option>
+                    <option value="Pemecahan">3.PEMECAHAN</option>
+                    <option value="Penggabungan">4.PENGGABUNGAN</option>
+                    <option value="Pemisahan">5.PEMISAHAN</option>
+					<option value="Pengembalian Batas">6.PENGEMBALIAN BATAS</option>
+					<option value="Wakaf">7.WAKAF</option>
+					<option value="SK 1">8.SK</option>
+					<option value="Pendaftaran Kedua">9.PENDAFTARAN KEDUA</option>
+					<option value="Penggantian Sertifikat">10.PENGGANTIAN SERTIFIKAT</option>
+					<option value="SK 2">11.SK</option>
+                  </select>
+                                     
+                                      
+                  </div>
+                                                          <!--provinsi-->
                                
                 
 				
