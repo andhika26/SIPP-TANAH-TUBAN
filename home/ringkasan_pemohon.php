@@ -152,7 +152,7 @@
               </tr>
               <tr>
                 <td>11</td>
-                <td>SK</td>
+                <td>BMN</td>
                 <td><b><?php echo $hitung11[0] ?></b> Berkas</td>
                 <td><b><?php echo $hitung11[1] ?></b> Berkas</td>
                 <td><b><?php if($hitung11[1]-$hitung11[0]>0){ echo $hitung11[1]-$hitung11[0]; } else { echo "0"; } ?></b> Berkas</td>
